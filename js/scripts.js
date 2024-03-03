@@ -25,6 +25,9 @@ $(window).on('load', () => {
 });
 
 function checkScroll() {
+    if ($(window).scrollTop() > 200) {
+        loadMap();
+    }
     if (animatingScroll) {
         scrollY = $(window).scrollTop();
         return;
@@ -45,4 +48,8 @@ function checkScroll() {
     }
     scrollY = $(window).scrollTop();
     $(document.body).toggleClass('scrolled', $(window).scrollTop() > 0);
+}
+
+function loadMap() {
+    $('#ymap_lazy').attr('src', $('#ymap_lazy').attr('data-src'));
 }
