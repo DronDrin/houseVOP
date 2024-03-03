@@ -863,7 +863,7 @@ body.scrolled .wrapper {
     padding-bottom: 180%;
   }
 }
-.map__map {
+.map__map-wrapper iframe {
   position: absolute;
   width: 100%;
   height: 100%;

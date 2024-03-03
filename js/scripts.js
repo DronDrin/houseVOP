@@ -20,6 +20,8 @@ $(window).on('load', () => {
             $('.video__video').get(0).pause();
         }
     });
+
+
 });
 
 function checkScroll() {
