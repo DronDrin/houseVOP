@@ -9,16 +9,6 @@ $(window).on('load', () => {
     $('.header__burger').on('click', () => {
         $(document.body).toggleClass('menu-opened');
     });
-
-
-    $('.video__container').on('click', e => {
-        $('.video').toggleClass('video_playing');
-        if ($('.video').hasClass('video_playing'))
-            $('.video__video').get(0).play();
-        else $('.video__video').get(0).pause();
-    });
-
-
 });
 
 function checkScroll() {
@@ -32,6 +22,12 @@ function checkScroll() {
 
 function loadVideo() {
     $('#lazy-video').attr('src', $('#lazy-video').attr('data-src'));
+    $('.video__container').on('click', e => {
+        $('.video').toggleClass('video_playing');
+        if ($('.video').hasClass('video_playing'))
+            $('.video__video').get(0).play();
+        else $('.video__video').get(0).pause();
+    });
 }
 
 function loadMap() {

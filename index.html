@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Покупайте квартиры в новом жилом комплексе от HouseVOP!">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
@@ -57,7 +58,13 @@
     </header>
     <div class="paralax">
         <div class="paralax__background">
-            <img src="content/top/background.jpg" alt="loggia / view on the city" class="paralax__background-image">
+
+
+            <picture class="paralax__background-image">
+                <source srcset="content/top/background.webp"/>
+                <img src="content/top/background.jpg" alt="view on the city from loggia">
+            </picture>
+
             <div class="paralax__blur"></div>
         </div>
         <div class="paralax__content first-screen">
@@ -165,7 +172,11 @@
             </div>
             <div class="show">
                 <div class="show__background">
-                    <img src="content/show/background.jpg" alt="houses in city" class="show__back-img">
+
+                    <picture class="show__back-img">
+                        <source srcset="content/show/background.webp"/>
+                        <img src="content/show/background.jpg" alt="houses in city">
+                    </picture>
                     <div class="show__blur"></div>
                 </div>
                 <div class="container show__container">
