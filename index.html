@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Покупайте квартиры в новом жилом комплексе от HouseVOP!">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="js/scripts-dist.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="js/scripts-dist.js"></script>
     <title>HouseVOP</title>
 </head>
 
@@ -60,9 +60,9 @@
         <div class="paralax__background">
 
 
-            <picture class="paralax__background-image">
+            <picture>
                 <source srcset="content/top/background.webp"/>
-                <img src="content/top/background.jpg" alt="view on the city from loggia">
+                <img src="content/top/background.jpg" alt="view on the city from loggia"  class="paralax__background-image">
             </picture>
 
             <div class="paralax__blur"></div>
@@ -133,9 +133,9 @@
                     <div class="apartments__cards">
                         <a href="#" class="apartments__card card">
                             <div class="card__background">
-                                <picture class="card__back-img">
+                                <picture>
                                     <source srcset="content/apartaments/01.webp"/>
-                                    <img src="content/apartaments/01.jpg" alt="apartment">
+                                    <img src="content/apartaments/01.jpg" alt="apartment" class="card__back-img">
                                 </picture>
                                 <div class="card__blur"></div>
                             </div>
@@ -145,9 +145,9 @@
                         </a>
                         <a href="#" class="apartments__card card">
                             <div class="card__background">
-                                <picture class="card__back-img">
+                                <picture>
                                     <source srcset="content/apartaments/02.webp"/>
-                                    <img src="content/apartaments/02.jpg" alt="apartment">
+                                    <img src="content/apartaments/02.jpg" alt="apartment" class="card__back-img">
                                 </picture>
                                 <div class="card__blur"></div>
                             </div>
@@ -157,9 +157,9 @@
                         </a>
                         <a href="#" class="apartments__card card">
                             <div class="card__background">
-                                <picture class="card__back-img">
+                                <picture>
                                     <source srcset="content/apartaments/01.webp"/>
-                                    <img src="content/apartaments/01.jpg" alt="apartment">
+                                    <img src="content/apartaments/01.jpg" alt="apartment" class="card__back-img">
                                 </picture>
                                 <div class="card__blur"></div>
                             </div>
@@ -169,9 +169,9 @@
                         </a>
                         <a href="#" class="apartments__card card">
                             <div class="card__background">
-                                <picture class="card__back-img">
+                                <picture>
                                     <source srcset="content/apartaments/02.webp"/>
-                                    <img src="content/apartaments/02.jpg" alt="apartment">
+                                    <img src="content/apartaments/02.jpg" alt="apartment"  class="card__back-img">
                                 </picture>
                                 <div class="card__blur"></div>
                             </div>
@@ -184,10 +184,9 @@
             </div>
             <div class="show">
                 <div class="show__background">
-
-                    <picture class="show__back-img">
+                    <picture>
                         <source srcset="content/show/background.webp"/>
-                        <img src="content/show/background.jpg" alt="houses in city">
+                        <img src="content/show/background.jpg" alt="houses in city" class="show__back-img" decoding="async">
                     </picture>
                     <div class="show__blur"></div>
                 </div>

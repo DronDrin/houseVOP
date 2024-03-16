@@ -1,6 +1,7 @@
 @import url('zeros.css');
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700,800&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300&display=swap);
 
 @font-face {
     font-family: Post;
@@ -14,6 +15,9 @@ body {
 
     &.loading * {
         transition: none !important;
+        .header__burger {
+            opacity: 0;
+        }
     }
 
     &.menu-opened {
@@ -369,10 +373,10 @@ body.scrolled {
     }
 
     &__upside {
-        font-family: sans-serif;
+        font-family: Roboto;
+        font-weight: 300;
         font-size: 20px;
         text-align: center;
-        font-weight: 100;
     }
 
     &__block-number {

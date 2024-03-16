@@ -1,6 +1,7 @@
 @import url("zeros.css");
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700,800&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300&display=swap);
 @font-face {
   font-family: Post;
   src: url("../fonts/post-no/post.woff2"), url("../fonts/post-no/post.woff"), url("../fonts/post-no/post.ttf");
@@ -13,6 +14,9 @@ body {
 body.loading * {
   -webkit-transition: none !important;
   transition: none !important;
+}
+body.loading * .header__burger {
+  opacity: 0;
 }
 body.menu-opened {
   overflow: hidden;
@@ -392,10 +396,10 @@ body.scrolled .wrapper {
   margin-bottom: 53px;
 }
 .upsides__upside {
-  font-family: sans-serif;
+  font-family: Roboto;
+  font-weight: 300;
   font-size: 20px;
   text-align: center;
-  font-weight: 100;
 }
 .upsides__block-number {
   right: 13%;
